@@ -1,12 +1,15 @@
 <!-- ## Gaussian Units
  -->
 
+- [Maxwell's Equation](#maxwells-equation)
+  - [In the case of a vacuum](#in-the-case-of-a-vacuum)
+  - [Contunuity Equation](#contunuity-equation)
+  - [The Maxwell's Equations in Macroscopic Midia](#the-maxwells-equations-in-macroscopic-midia)
+  - [Boundary Conditions at Interfaces between Different Media](#boundary-conditions-at-interfaces-between-different-media)
 
 # Maxwell's Equation
 
 $$\begin{equation}\vec{\nabla} \cdot \vec{D}  = \rho\end{equation}$$ 
-<br>
-
 $$\begin{equation}\vec{\nabla} \times \vec{H}  - \frac{\partial \vec{D}}{\partial t} = \vec{J}\end{equation}$$
 $$\begin{equation}\vec{\nabla} \times \vec{E}  + \frac{\partial \vec{B}}{\partial t} = 0\end{equation}$$
 $$\begin{equation}\vec{\nabla} \cdot \vec{B}  = 0 \end{equation}$$
