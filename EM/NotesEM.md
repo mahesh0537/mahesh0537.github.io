@@ -10,17 +10,35 @@
 
 # Maxwell's Equation
 
-$$\begin{equation}\vec{\nabla} \cdot \vec{D}  = \rho\end{equation}$$ 
-$$\begin{equation}\vec{\nabla} \times \vec{H}  - \frac{\partial \vec{D}}{\partial t} = \vec{J}\end{equation}$$
-$$\begin{equation}\vec{\nabla} \times \vec{E}  + \frac{\partial \vec{B}}{\partial t} = 0\end{equation}$$
-$$\begin{equation}\vec{\nabla} \cdot \vec{B}  = 0 \end{equation}$$
+$$\begin{equation}
+  \vec{\nabla} \cdot \vec{D}  = \rho
+\end{equation}$$ 
+$$\begin{equation}
+  \vec{\nabla} \times \vec{H}  - \frac{\partial \vec{D}}{\partial t} = \vec{J}
+\end{equation}$$
+$$\begin{equation}
+  \vec{\nabla} \times \vec{E}  + \frac{\partial \vec{B}}{\partial t} = 0
+\end{equation}$$
+$$\begin{equation}
+  \vec{\nabla} \cdot \vec{B}  = 0 
+\end{equation}$$
 
 ## In the case of a vacuum
-$$\begin{equation}\vec{D} = \epsilon_0 \vec{E}\end{equation}$$
-$$\begin{equation}\vec{B} = \mu_0 \vec{H}\end{equation}$$
-$$\begin{equation}C^{-2} = \epsilon_0\mu_0\end{equation}$$
-$$\begin{equation}\vec{\nabla}\cdot\vec{E} = \frac{\rho}{\epsilon_0}\end{equation}$$
-$$\begin{equation}\vec{\nabla}\times\vec{B} - \frac{1}{C^2}\frac{\delta \vec{E}}{\delta t} = \mu_0\vec{J}\end{equation}$$
+$$\begin{equation}
+  \vec{D} = \epsilon_0 \vec{E}
+\end{equation}$$
+$$\begin{equation}
+  \vec{B} = \mu_0 \vec{H}
+\end{equation}$$
+$$\begin{equation}
+  C^{-2} = \epsilon_0\mu_0
+\end{equation}$$
+$$\begin{equation}
+  \vec{\nabla}\cdot\vec{E} = \frac{\rho}{\epsilon_0}
+\end{equation}$$
+$$\begin{equation}
+  \vec{\nabla}\times\vec{B} - \frac{1}{C^2}\frac{\delta \vec{E}}{\delta t} = \mu_0\vec{J}
+\end{equation}$$
 
 ## Contunuity Equation
 Taking the divergence of the  equation $(2)$ and replacing $\vec{\nabla}\cdot\frac{\delta\vec{D}}{\delta t}$ with $\frac{\delta \rho}{\delta t}$ by using equation $(1)$ gives

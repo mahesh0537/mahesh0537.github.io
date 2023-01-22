@@ -3,5 +3,6 @@
     "markdown.extension.preview.autoShowPreviewToSide": false,
     "markdown.extension.print.absoluteImgPath": false,
     "markdown.extension.print.imgToBase64": false,
-    "markdown.extension.print.onFileSave": true
+    "markdown.extension.print.onFileSave": true,
+    "markdown.extension.syntax.plainTheme": true
 }
