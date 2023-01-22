@@ -1,6 +1,6 @@
 <!-- ## Gaussian Units
  -->
-
+mode dark
 - [Maxwell's Equation](#maxwells-equation)
   - [In the case of a vacuum](#in-the-case-of-a-vacuum)
   - [Contunuity Equation](#contunuity-equation)
