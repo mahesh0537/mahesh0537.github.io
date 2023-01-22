@@ -4,7 +4,9 @@
 
 # Maxwell's Equation
 
-$$\begin{equation}\vec{\nabla} \cdot \vec{D}  = \rho\end{equation}$$
+$$\begin{equation}\vec{\nabla} \cdot \vec{D}  = \rho\end{equation}$$ 
+<br>
+
 $$\begin{equation}\vec{\nabla} \times \vec{H}  - \frac{\partial \vec{D}}{\partial t} = \vec{J}\end{equation}$$
 $$\begin{equation}\vec{\nabla} \times \vec{E}  + \frac{\partial \vec{B}}{\partial t} = 0\end{equation}$$
 $$\begin{equation}\vec{\nabla} \cdot \vec{B}  = 0 \end{equation}$$
