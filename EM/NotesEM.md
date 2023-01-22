@@ -5,6 +5,8 @@
   - [Contunuity Equation](#contunuity-equation)
   - [The Maxwell's Equations in Macroscopic Midia](#the-maxwells-equations-in-macroscopic-midia)
   - [Boundary Conditions at Interfaces between Different Media](#boundary-conditions-at-interfaces-between-different-media)
+  - [Electrostatics](#electrostatics)
+  - [Delta Function](#delta-function)
 
 # Maxwell's Equation
 
@@ -47,3 +49,57 @@ $$\begin{equation} D_\alpha (\^{k}, w) = \epsilon_{\alpha \beta}(\^{k}, w)E_\bet
 
 
 ## Boundary Conditions at Interfaces between Different Media 
+
+Let V be a finite volume in space, S the closed surface (or surfaces) bounding it, da an element of area on the surface, and n a unit normal to the surface at da pointing outward from the enclosed volume. Then the divergence theorem applied to the equations (1 and 4) yields the integral statements
+$$\begin{equation} \int_V \vec{\nabla} \cdot \vec{D} dV = \int_S \vec{D} \cdot \vec{n} da = \int_V \rho dV \end{equation}$$
+
+$$\begin{equation} \int_V \vec{\nabla} \cdot \vec{B} dV = \int _S\vec{B}.\^{x}da =0 \end{equation}$$
+
+The first of these equations is the Gauss law for electric charge, and the second is the Gauss law for magnetic flux. The second equation is a consequence of the fact that the magnetic field is a vector potential, and therefore the divergence of the magnetic field is zero. The first equation is a consequence of the fact that the electric field is a scalar potential, and therefore the divergence of the electric field is equal to the charge density.
+
+The first relation is just Gauss's law that the total flux of D out through the surface. is proportional to the charge contained inside. The second is the magnetic analog, with no net flux of B through a closed surface because of the nonexistence of magnetic charges. 
+
+ let C be a closed contour in space, S' an open surface spanning the contour, di a line element on the contour, da an element of area on S', and n' a unit normal at da pointing in the direction given by the right-hand rule from the sense of integration around the contour. Then applying Stokes's theorem to the equations (2, 3) gives the integral statements 
+ $$\begin{equation} \int_S \vec{\nabla} \times \vec{E} da = \int_C \vec{E}dl=-\int \frac{d \vec{B}}{d t} da \end{equation}$$
+ $$\begin{equation} \int_S \vec{\nabla} \times \vec{H} da = \int_C \vec{H}dl=\int_S \left(J + \frac{d \vec{D}}{d t}\right) da \end{equation}$$
+
+ <img src="assets/boundaryCondition.png">
+
+ Using equations 15 and 16, we can write the boundary conditions at the interface between two media as
+
+$$\begin{equation}
+  \left[\vec{D}_2.\^{n} - \vec{D}_1.\^{n} \right]\Delta a = \delta \Delta a
+\end{equation}$$
+
+$$\left[\vec{D}_2 - \vec{D}_1 \right]\^{n} = \delta$$
+
+Similarly, the boundary conditions for the magnetic field are
+$$\^{n} (H_2 - H_1) = \vec{K}$$
+
+## Electrostatics
+ $$\begin{equation}
+  \vec{F} = \frac{1}{4\pi\epsilon_0} \frac{q_1q_2}{r^2} \hat{r}
+ \end{equation}$$
+ $$\begin{equation}
+  \vec{E} = \frac{1}{4\pi\epsilon_0} \sum \frac{q_i(\vec{x} - \vec{x}_i)}{(\vec{x} - \vec{x}_i)^3}  = \frac{1}{4\pi\epsilon_0} \int d^3\vec{x}' \frac{\rho(\vec{x}')(\vec{x} - \vec{x}')}{(\vec{x} - \vec{x}')^3}
+  \end{equation}$$
+
+## Delta Function
+$$\begin{equation}
+  \delta(\vec{x} - \vec{x}_0) = 0 \quad \text{for} \quad \vec{x} \neq \vec{x}_0
+\end{equation}$$
+$$\begin{equation}
+    \int d^3\vec{x} \delta(\vec{x} - \vec{x}_0) = 1  \quad \text{Unit } L^{-3} 
+\end{equation}$$
+
+$$\begin{equation}
+  \int d^3\vec{x} \delta(\vec{x} - \vec{x}_0) \vec{f}(\vec{x}) = \vec{f}(\vec{x}_0) 
+\end{equation}$$
+
+$$\begin{equation}
+  \int d^3\vec{x} \delta '(\vec{x} - \vec{x}_0) \vec{f}(\vec{x}) = -\vec{f}'(\vec{x}_0)
+\end{equation}$$
+
+$$\begin{equation}
+  \delta(f(x)) = \sum \frac{\delta(x - x_i)}{|f'(x_i)|}
+\end{equation}$$
