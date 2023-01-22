@@ -1,1 +1,1 @@
-[PH-444 Electromagnetic Theory](NotesEM.md)
+[PH-444 Electromagnetic Theory](EM/NotesEM.md)
