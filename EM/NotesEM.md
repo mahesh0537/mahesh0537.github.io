@@ -7,6 +7,12 @@
   - [Boundary Conditions at Interfaces between Different Media](#boundary-conditions-at-interfaces-between-different-media)
   - [Electrostatics](#electrostatics)
   - [Delta Function](#delta-function)
+  - [Gauss's Law](#gausss-law)
+  - [Scalar Potential](#scalar-potential)
+  - [Poisson's and Laplas Equation](#poissons-and-laplas-equation)
+  - [Green's Theorem](#greens-theorem)
+    - [Divergence Theorem](#divergence-theorem)
+  - [Uniqueness of the Solution with Dirichlet or Neumann Boundary Conditions](#uniqueness-of-the-solution-with-dirichlet-or-neumann-boundary-conditions)
 
 # Maxwell's Equation
 
@@ -121,3 +127,101 @@ $$\begin{equation}
 $$\begin{equation}
   \delta(f(x)) = \sum \frac{\delta(x - x_i)}{|f'(x_i)|}
 \end{equation}$$
+
+## Gauss's Law
+$$\begin{equation}
+  \int \vec{E}.\^{n} da = \int \frac{q}{4\pi\epsilon_0} \frac{\cos \theta}{r^2} da
+\end{equation}$$
+
+$$\cos \theta da = r^2 d \Omega \quad \text{Solid angle}$$
+$$\vec{E}.\^{n} da = \frac{q}{4\pi \epsilon_0} d \Omega$$
+
+$$\begin{equation}
+  
+\oint E \^n da = \left \{ \begin{align*}
+  \frac{q}{\epsilon_0} & \quad\text{for closed surface} \\
+  0 & \quad\text{ for open surface}
+\end{align*}\right.
+\end{equation}$$
+
+## Scalar Potential
+
+
+$$\begin{equation*}
+  \vec{E}  = \frac{1}{4\pi\epsilon_0} \int d^3\vec{x}' \frac{\rho(\vec{x}')(\vec{x} - \vec{x}')}{(\vec{x} - \vec{x}')^3}
+  
+\end{equation*}$$
+$$\begin{equation*}
+\frac{(\vec{x} - \vec{x}')}{(\vec{x} - \vec{x}')^3} = -\nabla \left(\frac{1}{|\vec{x} - \vec{x}'|}\right)
+\end{equation*}$$
+
+$$\begin{equation}
+  \phi(\vec{x}) = \frac{1}{4\pi\epsilon_0} \int d^3\vec{x}' \frac{\rho(\vec{x}')}{|\vec{x} - \vec{x}'|}
+\end{equation}$$
+
+$$\begin{equation}
+  \vec{E} = -\vec{\nabla} \phi
+\end{equation}$$
+
+## Poisson's and Laplas Equation
+
+$$\begin{equation}
+  \nabla^2 \phi = -\rho/\epsilon_0 \quad \text{Poisson equation}
+\end{equation}$$
+
+In regions of space where there is no charge density, the scalar potential satisfies the *Laplace equation*:
+
+$$\begin{equation}
+  \nabla^2 \phi = 0
+\end{equation}$$
+
+$$\begin{equation}
+  \nabla^2 \left(\frac{1}{|\vec{x} - \vec{x}'|}\right) = -4\pi \delta^3(\vec{x} - \vec{x}')
+\end{equation}$$
+
+## Green's Theorem
+
+### Divergence Theorem
+
+$$\begin{equation}
+  \int \vec{\nabla}.\vec{A} dv = \oint \vec{A}.\^{n} da
+\end{equation}$$
+
+Choose $A$ to be $\Phi\nabla\Psi$, where $\Phi$ and $\Psi$ are **nice** scalar field. Then
+
+$$\begin{equation}
+  \vec{\nabla}.(\Phi\nabla\Psi) = \nabla \Phi .\nabla\Psi + \Phi \nabla^2 \Psi
+\end{equation}$$
+$$\begin{equation*}
+  \vec{\nabla}\Psi\hat{n} = \frac{\partial \Psi}{\partial n}da
+\end{equation*}$$
+**Green's $1^{st}$ identity**
+
+$$\begin{equation}
+  \int_v (\nabla \Phi .\nabla\Psi + \Phi \nabla^2 \Psi) dv = \oint_{s} \Phi \frac{\partial{\Psi}}{\partial{n}} da
+\end{equation}$$
+
+If we write down eq(36) again with $\Phi$ and $\Psi$ interchanged and then subtract it from eq(36), we get ***Green's theorem***
+
+$$\begin{equation}
+  \int_v (\Phi \nabla^2 \Psi - \Psi \nabla^2\Phi) d^3x = \oint_{s} \left[ \Phi \frac{\partial{\Psi}}{\partial{n}} - \Psi \frac{\partial \Phi}{\partial n} \right] da
+\end{equation}$$
+
+If we choose $\Psi = \frac{1}{|\vec{x} - \vec{x}'|} = \frac{1}{R}$
+where $x$ is observation point and $x'$ is integration varibale.
+
+Now,
+
+$$\begin{equation}
+  \int_v \left[ -4\pi\Phi(x') \delta(x - x') + \frac{1}{R}\rho(x') \right] d3x' = \oint_{s} \left[ \Phi \frac{\partial \Psi}{\partial n} - \Psi \frac{\partial \Phi}{\partial n} \right] da
+\end{equation}$$
+
+$$\begin{equation}
+  \Phi(x) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(\vec{x}')}{R} d^3x' + \frac{1}{4\pi\epsilon_0}\int_s\left [ \frac{\epsilon_0}{R}\frac{\partial \Phi}{\partial n'} - \epsilon_0 \Phi \frac{\partial}{\partial n'}\left [\frac{1}{R}\right]\right]
+\end{equation}$$
+
+Surface charge density $\delta(x) = \epsilon_0\frac{\partial \Phi}{\partial n'}$
+
+Dipole layer $-\epsilon_0\Phi$
+
+## Uniqueness of the Solution with Dirichlet or Neumann Boundary Conditions
