@@ -1,0 +1,146 @@
+.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+.img-circle {
+    border-radius: 50%
+}
+header {
+    background-image: url(./../img/wave.jpg);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: #fff
+}
+header .intro-text{
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+header img{
+    margin: auto;
+    border: 10px solid #fff;
+}
+
+header .intro-text .intro-body{
+    font-size: 22px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    margin-bottom: 25px
+}
+header .intro-text .intro-name{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+}
+header .intro-text .intro-description{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-style: italic;
+    margin-bottom: 25px
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent
+}
+.navbar-default .navbar-brand {
+    color: #5cb85c;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, cursive;
+    letter-spacing: 4px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+    color: #3c983c
+}
+.navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, .02)
+}
+.navbar-default .navbar-toggle {
+    background-color: #5cb85c;
+    border-color: #5cb85c
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #5cb85c
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ccc
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+    color: #5cb85c;
+    outline: 0
+}
+.navbar-default .navbar-collapse {
+    background-color: rgba(34,34,34,0.7);
+    margin-left: -16px;
+    padding-right: 16px;
+    border-radius: 8px;
+}
+.navbar-default .navbar-nav>.active>a {
+    border-radius: 0;
+    color: #fff;
+    background-color: #5cb85c
+}
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #3c983c
+}
+@media (min-width: 768px) {
+    .navbar-default {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0
+    }
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s
+    }
+    .navbar-default .navbar-nav>.active>a {
+        border-radius: 3px
+    }
+    .navbar-default.navbar-shrink {
+        background-color: #222;
+        padding: 10px 0
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em
+    }
+}
+
+.client-link {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    padding: 10;
+}
+.img_logo{
+    margin: 10px;
+}

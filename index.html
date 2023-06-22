@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Visualization</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/main2.css" rel="stylesheet">
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Mahesh Bhupati</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden"><a href="#page-top"></a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="https://drive.google.com/file/d/1gNhQDfFdLZ6hdakYv41Q54-0geHnX45T/view?usp=sharing">Resume</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="large-header" style="position:absolute;pointer-events:none" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+        </div>
+
+        <div style="padding-bottom:32px; padding-top: 128px;">
+            <img src="./img/profile_small.png" width="240" class="img-responsive img-circle" alt="">
+        </div>
+        <div class="container" id="header">
+            <div class="intro-text" style="text-shadow: 3px 3px 30px #000000, 3px 3px 30px #000000; margin-top: 40px;">
+                <div class="intro-name">Mahesh Bhupati</div>
+                <div class="intro-description">Team Lead @UMIC- UG student IITB-AI/ML Researcher-Robotics Enthusiast</div>
+                <div class="intro-body">Welcome To My Portfolio!</div>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding-top: 2rem; padding-bottom: 2rem; background-color: #99b8cd" id="about">
+        <div style="text-align: center;">
+            <a href="https://www.iitb.ac.in/" target="blank" class="client-link" >
+                <img src="./img/iitb.png" width="240" class="img-responsive" alt="">
+            </a>
+            <a href="https://umiciitb.com/" target="blank" class="client-link">
+                <img src="./img/umicfull.png" width="240" class="img-responsive" alt="">
+            </a>
+            <a href="https://umiciitb.com/" target="blank" class="client-link">
+                <img src="./img/aerove.png" width="240" class="img-responsive" alt=""style="background-color: #000000;">
+            </a>
+            <a href="https://loqm.tech/" target="blank" class="client-link">
+                <img src="./img/loqm.jpg" width="240" class="img-responsive" alt="">
+            </a>
+            <a href="https://research.samsung.com/sri-b" target="blank" class="client-link">
+                <img src="./img/Samsung.webp" width="240" class="img-responsive" alt="" >
+            </a>
+        </div>
+    </section>
+
+
+
+    <section class="contents" style="background: #c4d6e2; padding-top: 4rem; padding-bottom: 6rem; display: flex; flex-direction: column;">
+        <div class="container">
+            <div class="row">
+                <div style="flex: 0 0 350px; float:left; margin: 10px;">
+                    <img src="./img/profile_small.png" style="border:8px solid white; width:350px!important; height:100%; padding: auto;" class="img-responsive img-circle" alt="">
+                    <div class="social-logos">
+                        <a href="https://www.linkedin.com/in/mahesh-bhupati-1b1b3b1a0/" target="blank" class="social-link">
+                            <img src="./img/linkdin.png" width="64" class="img-responsive img-circle img_logo" alt="">
+                        </a>
+                        <a href="https://twitter.com/mahesh0537" target="blank" class="social-link">
+                            <img src="./img/twitter.avif" width="64" class="img-responsive img_logo" alt="">
+                        </a>
+                        <a href="https://github.com/mahesh0537" target="blank" class="social-link">
+                            <img src="./img/github.png" width="64" class="img-responsive img-circle img_logo" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div id="intro" style="margin-bottom: 1rem; margin-top:1rem; margin: 80px;">
+                    <h2 style="font-weight: bold;">Mahesh Bhupati</h2>
+                    <p style="font-size: 16pt; font-weight: 300;"><b>IITB '24, Engineering Physics, ML/Robotics Researcher, Computational Physics</b></p>
+                    <p style="font-size: 14pt;">I am 4th year Engineering Physics student at IIT Bombay. I'm the team lead of Team AeRoVe, a student team that is developing an autonomous solution for aerial robotics. <br> <br>I'm passionate about AI/ML, computer vision, robotics, and computational physics. I'm excited to use my skills and knowledge to make a positive impact on the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="timeline" style="background-color: #99b8cd;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading mb-2">Timeline</h2>
+            </div>
+          </div>
+          <div class="container text-center mb-5">
+            <p class="lead">A short summary of my work experience..</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                <li  style="margin-bottom:32px">
+                    <a href="https://umiciitb.com/" target="blank">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="./img/main-aerove.png" alt="UMIC">
+                      </div>
+                    </a>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h5>May 2023 - Present</h5>
+                        <h4 class="subheading">
+                          <a href="https://umiciitb.com/" target="blank">AeRoVe@UMIC,</a><br>IIT Bombay</h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                  </li>
+                <li class="timeline-inverted" style="margin-bottom:32px">
+                    <a href="https://research.samsung.com/sri-b" target="blank">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="./img/samsungsq.webp" alt="SRI">
+                      </div>
+                    </a>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h5>May 2023 - Present</h5>
+                        <h4 class="subheading">
+                          <a href="https://loqm.tech/" target="blank">Samsung Research,</a><br>India-Bangalore</h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                </li>
+                <li style="margin-bottom:32px">
+                    <a href="http://www.csre.iitb.ac.in/index.php" target="blank">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="./img/csresq.png" alt="SRI">
+                      </div>
+                    </a>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h5>Dec 2022 - Mar 2023</h5>
+                        <h4 class="subheading">
+                          <a href="http://www.csre.iitb.ac.in/index.php" target="blank">CSRE,</a><br>IIT Bombay</h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted" style="margin-bottom:32px">
+                    <a href="https://umiciitb.com/" target="blank">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="./img/main-aerove.png" alt="UMIC">
+                      </div>
+                    </a>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h5>May 2022 - Apr 2023</h5>
+                        <h4 class="subheading">
+                          <a href="https://umiciitb.com/" target="blank">AeRoVe@UMIC,</a><br>IIT Bombay</h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                  </li>
+                <li style="margin-bottom:32px">
+                    <a href="https://loqm.tech/" target="blank">
+                      <div class="timeline-image">
+                        <img class="img-circle img-responsive" src="./img/loqmsq.jpg" alt="LOQM lab IIT Bombay">
+                      </div>
+                    </a>
+                    <div class="timeline-panel">
+                      <div class="timeline-heading">
+                        <h5>Dec 2021 - Present</h5>
+                        <h4 class="subheading">
+                          <a href="https://loqm.tech/" target="blank">LOQM,</a><br>IIT Bombay</h4>
+                      </div>
+                      <div class="timeline-body">
+                        <p class="lead"></p>
+                      </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted" style="margin-bottom:32px">
+                  <a href="https://umiciitb.com/" target="blank">
+                    <div class="timeline-image">
+                      <img class="img-circle img-responsive" src="./img/umic.png" alt="UMIC">
+                    </div>
+                  </a>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h5>Jan 2021 - Apr 2022</h5>
+                      <h4 class="subheading">
+                        <a href="https://umiciitb.com/" target="blank">UMIC,</a><br>IIT Bombay</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="lead"></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="https://www.iitb.ac.in/" target="blank">
+                    <div class="timeline-image">
+                      <img class="img-circle img-responsive" src="./img/iitb.png" alt="IIT Bombay" style="background-color: aliceblue;">
+                    </div>
+                  </a>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h5>Nov 2020 - Present</h5>
+                      <h4 class="subheading">
+                        <a href="https://www.iitb.ac.in/" target="blank">IIT Bombay</a></h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="lead"></p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+
+
+
+
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Me</h2>
+                    <h3 class="contact-info">Email: <a href="mailto:200260027@iitb.ac.in">200260027@iitb.ac.in</a> || <a href="mailto:mail2mahesh0537@gmail.com">mail2mahesh0537@gmail.com</a></h3>
+                    <h3 class="contact-info">Address: Hostel-2 IIT Bombay, Mumbai, 400076, Maharastra</h3>
+                    <h3 class="contact-info">Phone: <a href="tel:7991137795">+91 7991137795</a></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="js/demo.js"></script>
+
+</body>
+</html>
